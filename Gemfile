@@ -7,3 +7,5 @@ gem 'resque'
 gem 'rspec'
 gem 'database_cleaner'
 gem 'launchy'
+gem "rest-client"
+gem "nokogiri"
