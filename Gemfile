@@ -1,5 +1,5 @@
 source :rubygems
-gem "capybara-webkit"
+# gem "capybara-webkit"
 gem 'rspec'
 gem 'launchy'
 gem "rest-client"

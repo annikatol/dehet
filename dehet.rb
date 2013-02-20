@@ -1,8 +1,8 @@
 require "rubygems"
 require "bundler/setup"
-require "capybara"
-require "capybara/dsl"
-require "capybara-webkit"
+# require "capybara"
+# require "capybara/dsl"
+# require "capybara-webkit"
 require "nokogiri"
 require "restclient"
 
