@@ -22,14 +22,10 @@ word = ARGV[0]
 
 page = Nokogiri::HTML(RestClient.get("http://vandale.nl/opzoeken?pattern=#{word}&lang=nn"))   
 html = page.xpath('//*[@id="content-area"]/span[1]/span').to_s
-if html.scan '>de<' 
+if html.scan('>de<').count > 0
 	puts 'de'
-elsif html.scan '>het<' 
+elsif html.scan('>het<').count > 0
 	puts 'het'
 else
 	puts 'unknown'
 end
-
-
-
-
