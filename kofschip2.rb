@@ -1,4 +1,4 @@
-# word = ARGV[0]
+word = ARGV[0]
 
 def kofschip(stam)
 	laatste_letter = stam[-1]
@@ -7,13 +7,12 @@ end
 
 def verledentijd(stam)
 	if kofschip(stam) == true 
-		puts stam+'te'
+		stam+'te'
 	elsif kofschip(stam) == false
-		puts stam+'de'
+		stam+'de'
 	else 
-		puts unknown
+		'unknown'
 	end
 end
 
-puts "kofschip van smurf is"
-puts verledentijd('smurf')
+puts "kofschip van #{word} is '#{verledentijd(word)}'"
